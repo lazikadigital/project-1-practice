@@ -1,5 +1,5 @@
 def main() -> None:
-    print("Hello from the project-1-practice!")
+    print("Testing branching, namely setup")
 
 if __name__ == "__main__":
     main()
