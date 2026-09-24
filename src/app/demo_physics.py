@@ -1,4 +1,4 @@
-from .physics_utils import MassSpringSystem, spring_force, damper_force, natural_frequency, damping_ratio
+from .physics_utils import MassSpringSystem, spring_force, damper_force
 
 
 # 1. Create systems

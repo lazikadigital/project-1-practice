@@ -1,2 +1,9 @@
-# Add packages here later, e.g.:
-# requests>=2.31.0
+# Runtime dependencies (none yet for Step 1)
+# numpy>=1.26
+# scipy>=1.11
+# fastapi>=0.110
+
+# Development / testing
+pytest>=8.0
+
+
