@@ -7,10 +7,8 @@ from app.physics_utils import (
     MassSpringSystem,
 )
 
-
-# ON GIT COMMIT, SAY I ADDED PYPROJECT.TOML, INSTALLED PACKAGES (DEPENDENCIES),
-# ADDED TEST DIR STRUCTURE AND TEST FUNCTIONS
-# NEXT BRANCH WILL BE CALLED NUMPY
+# NEXT MAJOR GIT BRANCHES
+# SciPy ODE work (Step 3) and the FastAPI layer (Step 4)
 
 # COMMAND TO RUN THE TESTS: pytest tests/ -v
 # RUN pip install -e TO INSTALL EVERYTHING IN pyproject.toml
