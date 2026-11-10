@@ -455,12 +455,12 @@ for i, zeta in enumerate(zetas_arr):
     peak_overshoots[i] = overshoot(x, x_final)     # not overshoot(x)
 
 # settling times
-for z, ts in zip(zetas_arr, settling_times):
-    print(f"ζ = {z:.2f}  →  settling time = {ts:.3f} s")
+# for z, ts in zip(zetas_arr, settling_times):
+    # print(f"ζ = {z:.2f}  →  settling time = {ts:.3f} s")
 
 # overshoots
-for z, ts in zip(zetas_arr, peak_overshoots):
-    print(f"ζ = {z:.2f}  →  peak overshoot = {ts:.3f}")
+# for z, ts in zip(zetas_arr, peak_overshoots):
+    # print(f"ζ = {z:.2f}  →  peak overshoot = {ts:.3f}")
 
 # plot metric versus ζ.
 # plt.plot(zetas_arr, settling_times, 'b-', label="Settling times per zetas")
@@ -501,15 +501,15 @@ result = minimize_scalar(
     options={"xatol": 1e-3},
 )
 
-print('******* Optimization Results *******')
-print("Optimal ζ:", result.x)
-print("Minimum settling time:", result.fun)
-print("Success:", result.success)
+# print('******* Optimization Results *******')
+# print("Optimal ζ:", result.x)
+# print("Minimum settling time:", result.fun)
+# print("Success:", result.success)
 # Compare the optimal ζ with the sweep just performed — they roughly agree.
 min_idx = np.argmin(settling_times)
-print(f"Optimal zeta per sweep: {zetas_arr[min_idx]}")
+# print(f"Optimal zeta per sweep: {zetas_arr[min_idx]}")
 
-# EQUATIONS FOR REFERENCE
+# EQUATIONS FOR REFERENCE;
 
 # def underdamped_response(t, zeta, omega_n, x0, v0):
 #     omega_d = omega_n * np.sqrt(1.0 - zeta**2)
